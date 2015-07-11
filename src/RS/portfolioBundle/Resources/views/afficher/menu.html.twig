@@ -1,0 +1,3 @@
+{% for menuitems in menu %}
+<li><a href="{{ path(menuitems.path) }}" class="{{ menuitems.class }}">{{ menuitems.titles }}</a></li>
+{% endfor %}

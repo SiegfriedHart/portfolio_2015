@@ -1,0 +1,98 @@
+body {
+	font-family: calibri Light;
+	background-color: #f4f4f4;
+	margin: 0px;
+	color:#727272;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  #headerContent {
+	margin: 0 auto;
+        width: 1170px;
+}
+#footerContent{
+    margin: 0 auto;
+    width: 1170px;
+}
+}
+#header {
+	width: 100%;
+	margin: 25px 0;
+	background : url('images/bordureHeader.png') repeat-x center bottom;
+	border : none;
+	padding-bottom:30px;
+}
+#headerContent {
+	margin: 0 auto;
+}
+#menuLateral{
+    float: right;
+}
+#footer{
+    width: 100%;
+    border: none;
+}
+#footerContent{
+    margin: 0 auto;
+}
+span.label-default {
+    background-color: #337ab7;
+}
+span.label-default:hover {
+    cursor:default;
+}
+a span.label-default:hover  {
+    cursor:pointer;
+    text-decoration:none;
+    background-color: #358cd6;
+}
+#profilCompetences a:hover {
+    text-decoration:none;
+}
+#timeline li.listborder {
+  border-top: solid 7px #337ab7;
+  width: 100%;
+  margin-top: -14px;
+  margin-left: 0px;
+  padding-left: 4px;
+  padding-top:10px;
+  text-align: center;
+}
+#timeline li {
+    margin:0px;
+    padding:0px;
+    margin-right: -4px;
+    height:42px;
+}
+#timeline li.mainlist {
+    width:16.66666667%;
+}
+#timeline li.listpoint {
+    background: url('../images/pointer.png') no-repeat bottom center;
+    text-align: center;
+    z-index:1700;
+    position:relative;
+    font-weight: bold;
+}
+li#timeline2008.listpoint:hover, li#timeline2009.listpoint:hover, li#timeline2012.listpoint:hover, li#timeline2013.listpoint:hover, li#timeline2015.listpoint:hover, li#timelineAll.listpoint:hover {
+    background: url('../images/pointerhover.png') no-repeat bottom center;
+    cursor: pointer;
+}
+#timeline a:hover {
+    color:#358cd6;
+}
+#timeline {
+    margin-top: 38px;
+}

@@ -1,0 +1,4 @@
+{% for menuitems in menufooter %}
+<li><a href="{{ path(menuitems.path) }}" class="{{ menuitems.class }}">{{ menuitems.titles }}</a></li>
+{% endfor %}
+<li><a href="#header" class="retourTop">Test_RetourTop</a></li>

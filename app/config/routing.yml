@@ -1,0 +1,4 @@
+r_sportfolio:
+    resource: "@RSportfolioBundle/Controller/"
+    type:     annotation
+    prefix:   /

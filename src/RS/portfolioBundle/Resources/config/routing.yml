@@ -1,0 +1,22 @@
+# src/RS/portfolioBundle/Resources/config/routing.yml
+accueil:
+    path:     /
+    defaults: { _controller: RSportfolioBundle:Afficher:index }
+profil:
+    path:     /profil
+    defaults: { _controller: RSportfolioBundle:Afficher:index }
+    
+contact:
+    path:     /contact
+    defaults: { _controller: RSportfolioBundle:Afficher:contact }
+
+portfoliohome:
+    path:     /portfolio/
+    defaults: { _controller: RSportfolioBundle:Afficher:portfolio }
+portfolioview:
+    path:     /portfolio/{id}
+    defaults: { _controller: RSportfolioBundle:Afficher:portfolioview }
+mentions-legales:
+    path:     /mentions-legales
+    defaults: { _controller: RSportfolioBundle:Afficher:mentionslegales }
+    

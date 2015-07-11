@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    	<title>{% block title %}Richard Schilling Portfolio - Développeur Web Junior, graphiste Multimédia{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/rsportfolio/css/style.css') }}" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{ asset('bundles/rsportfolio/css/bootstrap/css/bootstrap.css') }}" type="text/css" media="all" />
+        {# On charge le CSS de bootstrap depuis le site directement #}
+        {% endblock %}
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="header">
+            <div id="headerContent" class="row">
+                <div id="headerTitle" class="col-lg-6">
+                    <h1><a href="{{ path('accueil') }}" title="Accueil">
+                    Richard Schilling - Développeur Web Junior  -  en Alternance
+                    </a>
+                    </h1>
+                </div>
+                <ul id="menu" class="col-lg-6 list-unstyled list-inline">
+                    {{ render(controller("RSportfolioBundle:Afficher:menu")) }}
+                </ul>
+                <div id="recherchAltern">
+                <!-- petite bannière au bas du header pour indiquer et mettre en avant ma recherche d'entreprise pour l'alternance -->
+                </div>
+                <!-- End#rechercheAltern -->
+            </div>
+            <!-- End#headerContent -->
+        </div>
+        <!-- End#header -->
+        <div id="wrapper" class="container">
+            <div id="mainContent">
+            <!-- Block twig pour le contenu principal -->
+            {% block contenu %}{% endblock %}
+            </div>
+            <!-- End#mainContent -->
+        </div>
+	<!-- End#wrapper -->
+	<div id="footer">
+            <div id="footerContent" class="row">
+		<ul class="col-lg-4 list-unstyled">
+                    {{ render(controller("RSportfolioBundle:Afficher:menufooter")) }}
+                </ul>
+                <div id="profilFooter" class="col-lg-4">
+                    <h3>Qui suis-je ?</h3>
+			<p></p>
+			<p></p>
+			<a href="">Voir mon CV</a>
+		</div>
+		<!-- End#profilFooter -->
+		<div id="contactFooter" class="col-lg-4">
+                    <h3>Me contacter</h3>
+			<p>Richard Schilling
+			<br />44 rue Saint Malo
+			<br />35000 Rennes
+			<br /><a href="mailto:schilling.richard.web@gmail.com">schilling.richard.web@gmail.com</a>
+		</div>
+		<!-- End#contactFooter -->
+            </div>
+            <!-- End#footerContent -->
+	</div>
+	<!-- End#wrapper -->
+        {% block javascripts %}
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="{{ asset('bundles/rsportfolio/css/bootstrap/js/bootstrap.min.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
+            
+        
+	
