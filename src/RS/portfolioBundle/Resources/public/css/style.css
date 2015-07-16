@@ -96,3 +96,6 @@ li#timeline2008.listpoint:hover, li#timeline2009.listpoint:hover, li#timeline201
 #timeline {
     margin-top: 38px;
 }
+.sectionListe h4{
+    cursor: pointer;
+}

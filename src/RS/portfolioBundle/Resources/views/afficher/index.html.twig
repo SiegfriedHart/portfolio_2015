@@ -3,8 +3,7 @@
 {% block contenu %}
                                 
                                 <div class="row">
-                                <div id="profil" class="col-lg-9 col-md-8">
-                                <h2>Profil</h2>
+                                <div id="profil" class="col-lg-10 col-md-9">
                                 <div id="profilPresentation" class="col-lg-12">
 				<h2>Qui suis-je ?</h2>
 				<p>Issu d’une formation en Arts Visuels et en Multimédia et passionné par le monde de l’informatique, j’ai toujours fait de la pluridisciplinarité, un des éléments clés de mon parcours. Je cherche aujourd’hui à acquérir une expérience significative et de solides compétences afin de faire aboutir mon projet professionnel : Développeur Web / Concepteur Développeur en projets numériques. Je cherche également à valoriser ma polyvalence et à compléter ma formation en Multimédia et mon apprentissage autodidacte en Développement, par le biais de l’alternance, en troisième année à l’IMIE de Rennes. </p>
@@ -22,13 +21,13 @@
                                 </div>
                                 <!-- End#profilCompétences -->
                                 </div>
-                                <div id="menuLateral" class="col-lg-3 col-md-4">
+                                <div id="menuLateral" class="col-lg-2 col-md-3">
                                 <ul class="list-unstyled">
-					<li><a href="">Présentation</a></li>
-					<li><a href="">Compétences</a></li>
-					<li><a href="">Formation</a></li>
-					<li><a href="">Expériences</a></li>
-					<li><a href="">Intérets</a></li>
+                                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Présentation</a></li>
+					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Compétences</a></li>
+					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Formation</a></li>
+					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Expériences</a></li>
+					<li class="last"><span class="glyphicon glyphicon-chevron-right"></span><a href="">Intérets</a></li>
 				</ul>
                                 </div>
                                 </div>
@@ -37,61 +36,45 @@
                                     <!-- Affichage graphique d'une timaline interactive -->
 					<ul class="list-unstyled list-inline">
                                             <li class="mainlist">
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled year2008">
                                                     <li id="timeline2008" class="listpoint">2008</li>
                                                     <li class="listborder">
-                                                        <a href="#">
                                                             <span class="glyphicon glyphicon-book"></span>
-                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled year2009">
                                                     <li id="timeline2009" class="listpoint">2009-2011</li>
                                                     <li class="listborder">
-                                                        <a href="#">
                                                             <span class="glyphicon glyphicon-book"></span>
-                                                        </a>
-                                                        <a href="">
                                                             <span class="glyphicon glyphicon-briefcase"></span>
-                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled year2012">
                                                     <li id="timeline2012" class="listpoint">2012</li>
                                                     <li class="listborder">
-                                                        <a href="#">
                                                             <span class="glyphicon glyphicon-book"></span>
-                                                        </a>
-                                                        <a href="">
                                                             <span class="glyphicon glyphicon-briefcase"></span>
-                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled year2013">
                                                     <li id="timeline2013" class="listpoint">2013-2014</li>
                                                     <li class="listborder">
-                                                        <a href="">
                                                             <span class="glyphicon glyphicon-briefcase"></span>
-                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled year2015">
                                                     <li id="timeline2015" class="listpoint">2015</li>
                                                     <li class="listborder">
-                                                        <a href="#">
                                                             <span class="glyphicon glyphicon-book"></span>
-                                                        </a>
-                                                        <a href="">
                                                             <span class="glyphicon glyphicon-briefcase"></span>
-                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -99,12 +82,8 @@
                                                 <ul class="list-unstyled">
                                                     <li id="timelineAll" class="all listpoint">Toutes</li>
                                                     <li class="listborder">
-                                                        <a href="#">
-                                                            <span class="glyphicon glyphicon-book"></span>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="glyphicon glyphicon-briefcase"></span>
-                                                        </a>
+                                                            <span class="glyphicon glyphicon-book bookAll"></span>
+                                                            <span class="glyphicon glyphicon-briefcase briefAll"></span>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -115,49 +94,51 @@
                                 
                                 <div class="row"><div id="profilContent" class="col-lg-12">
 				<!-- GRANDES LISTE UL CONTENANT LES DIFFERENTS ELEMENTS DU CV -->
-					<ul id="listePrincipale" class="list-unstyled"><li class="sectionListe">
+					<ul id="listePrincipale" class="list-unstyled">
+                                            <li class="sectionListe form col-lg-6 formation">
 						<!-- Section Formation -->
 							<div>
 								<h3>Formation</h3>
-								<div>
-									<h4>2015</h4>
+								<div class="year2015">
+									<h4 class ="click">2015</h4>
 									<p>Rentrée 2015 : Intègre une formation de Concepteur Développeur en Projets Numériques à l'IMIE de Rennes, en troisième année.</p>
 								</div>
-								<div>
-									<h4>2012</h4>
+								<div class="first year2012">
+									<h4 class ="click">2012</h4>
 									<p>Maîtrise en Multimédia (sorti Major) - M1 Pro Multimédia / Université de Strasbourg</p>
 									<p>Formation professionnalisante basée sur l’audiovisuel, le Web et l’infographie. Travail sur différents projets de courts-métrages, d’animation, de Webdesign, de graphisme et de 3D et sensibilisation à la gestion de projet et à la veille technologique.</p>
 								</div>
-								<div>
-									<h4>2009-2011</h4>
+								<div class="first year2009">
+									<h4 class ="click">2009-2011</h4>
 									<p>Licence en Arts Visuels option Infographie / Université de Strasbourg</p>
 									<p>Pratique du dessin, théorie des couleurs, histoire de l'art, muséographie, Esthétique, Graphisme 2D</p>
 								</div>
-								<div>
-									<h4>2008</h4>
+								<div class="first year2008">
+									<h4 class ="click">2008</h4>
 									<p>Baccalauréat Scientifique option Physique-Chimie</p>
 								</div>
 							</div>
+                                                
 						</li>
-						<li class="sectionListe">
+						<li class="sectionListe exp col-lg-6">
 						<!-- Section Expériences -->
 							<div>
 								<h3>Expériences</h3>
-								<div>
-									<h4>2015</h4>
+								<div class="year2015">
+									<h4 class ="click">2015</h4>
 									<p>Veille technologique et remise à niveau autodidacte (<a href="">Openclassrooms</a>) sur différents langages de développement, front/back-end.
 									<br /> 
 									(HTML5/CSS3 – Javascript – PHP/MySQL – Symfony - Bootstrap - LESS – Json)</p>
 									<p>Recherche d’emploi et préparation de la rentrée prochaine en vue de mon nouveau départ, de Strasbourg à Rennes.</p>
 								</div>
-								<div>
-									<h4>2013-2014</h4>
+								<div class="first year2013">
+									<h4 class ="click">2013-2014</h4>
 									<p>Divers emplois en tant qu’intérimaire, préparateur de commandes, opérateur de saisie, manutentionnaire ou employé viticole en Alsace.
 									<br />Dicker SAS, FOSSIL Logisav, Zimmermann & Fils</p>
 									<p>Chroniqueur pour l'"Ecole de Scholomance", un Webzine consacré aux musiques alternatives. Ecriture de chroniques et mises en ligne d'articles et d'actualités.</p>
 								</div>
-								<div>
-									<h4>2012</h4>
+								<div class="first year2012">
+									<h4 class ="click">2012</h4>
 									<p>Graphiste Multimédia & Webdesigner / Autoentreprise</p>
 									<p>Webmaster et Webdesigner / Site associatif
 									<br />Webmastering, réalisation d’une galerie vidéo et de contenu Multimédia.
@@ -167,8 +148,8 @@
 									<br />Wordpress et thème WP – Photoshop – Illustrator
 									</p>
 								</div>
-								<div>
-									<h4>2011</h4>
+								<div class="first year2009">
+									<h4 class ="click">2011</h4>
 									<p>Nuit de l’info 2011 / Équipe « SCRUMIZ »
 									<br />Participation à l’édition 2011 d’un concours à échelle nationale, basé sur l’informatique. 2ème place en méthodologie / 1ère place en Design d’application. 
 									<br />Méthode Agile – Photoshop – Illustrator
@@ -180,7 +161,7 @@
 								</div>
 							</div>
 						</li>
-                                                <li class="sectionListe">
+                                                <li class="sectionListe col-lg-12">
 						<!-- Section Compétences -->
 						<!-- Affichage dynamique/graphique de mes compétences -->
 							<ul class="list-unstyled">
@@ -266,7 +247,7 @@
                                                                 </div>
 							</ul>
 						</li>
-						<li class="sectionListe">
+						<li class="sectionListe col-lg-12">
 						<!-- Section Intérets -->
 							<h3>Interets</h3>
 							<ul class="list-unstyled">
