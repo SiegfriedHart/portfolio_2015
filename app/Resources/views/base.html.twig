@@ -20,15 +20,16 @@
         <![endif]-->
     </head>
     <body>
-        <div id="header">
+        {% block header %}
+        <div id="header" class="container">
             <div id="headerContent" class="row">
-                <div id="headerTitle" class="col-lg-6">
+                <div id="headerTitle" class="col-lg-6 col-md-6">
                     <h1><a href="{{ path('accueil') }}" title="Accueil">
                     Richard Schilling - Développeur Web Junior  -  en Alternance
                     </a>
                     </h1>
                 </div>
-                <ul id="menu" class="col-lg-6 list-unstyled list-inline">
+                <ul id="menu" class="col-lg-6 col-md-6 col-lg-6 list-unstyled list-inline">
                     {{ render(controller("RSportfolioBundle:Afficher:menu")) }}
                 </ul>
                 <div id="recherchAltern">
@@ -38,6 +39,7 @@
             </div>
             <!-- End#headerContent -->
         </div>
+        {% endblock %}
         <!-- End#header -->
         <div id="wrapper" class="container">
             <div id="mainContent">
@@ -49,23 +51,25 @@
 	<!-- End#wrapper -->
 	<div id="footer">
             <div id="footerContent" class="row">
-		<ul class="col-lg-4 list-unstyled">
+		<ul class="col-lg-3 list-unstyled">
                     {{ render(controller("RSportfolioBundle:Afficher:menufooter")) }}
                 </ul>
-                <div id="profilFooter" class="col-lg-4">
+                <div class="col-lg-9">
+                <div id="profilFooter" class="col-lg-9">
                     <h3>Qui suis-je ?</h3>
+                    <p>Développeur Web Junior & Graphiste Multimédia en <strong>alternance</strong>. Je suis actuellement à la recherche d'un poste.</p>
 			<p></p>
-			<p></p>
-			<a href="">Voir mon CV</a>
+                        <a href=""><span class="glyphicon glyphicon-file"></span>Voir mon CV</a>
 		</div>
 		<!-- End#profilFooter -->
-		<div id="contactFooter" class="col-lg-4">
+		<div id="contactFooter" class="col-lg-3">
                     <h3>Me contacter</h3>
 			<p>Richard Schilling
 			<br />44 rue Saint Malo
 			<br />35000 Rennes
 			<br /><a href="mailto:schilling.richard.web@gmail.com">schilling.richard.web@gmail.com</a>
 		</div>
+                </div>
 		<!-- End#contactFooter -->
             </div>
             <!-- End#footerContent -->

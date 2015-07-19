@@ -52,8 +52,7 @@ class AfficherController extends Controller
         $menufooter = array (
         array('titles' => 'Profil', 'class' => '', 'path' => 'profil'),
         array('titles' => 'Portfolio', 'class' => '', 'path' => 'portfoliohome'),
-        array('titles' => 'Contact', 'class' => '', 'path' => 'contact'), 
-        array('titles' => 'Mentions Légales', 'class' => '', 'path' => 'mentions-legales')
+        array('titles' => 'Contact', 'class' => '', 'path' => 'contact'),
         );
         return $this->get('templating')->renderResponse('RSportfolioBundle:Afficher:menufooter.html.twig', array('menufooter' => $menufooter));
     }

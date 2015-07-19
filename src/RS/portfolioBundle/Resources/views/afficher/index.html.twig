@@ -10,24 +10,24 @@
                                 </div>
                                 <!-- End#profilPresentation -->
                                 <div id="profilCompetences" class=col-lg-12">
-                                    <span class="label label-default">HTML5/CSS3</span> -
-                                    <span class="label label-default">JS/JQuery</span> -
-                                    <span class="label label-default">PHP/MySQL</span> -
-                                    <span class="label label-default">Symfony</span> -
-                                    <span class="label label-default">Bootstrap</span> -
-                                    <span class="label label-default">Photoshop</span> -
-                                    <span class="label label-default">Illustrator</span> -
-                                    <a href=""><span class="label label-default">And more ></span></a>
+                                    <span class="label label-default html5">HTML5/CSS3</span> -
+                                    <span class="label label-default jquery">JS/JQuery</span> -
+                                    <span class="label label-default php">PHP/MySQL</span> -
+                                    <span class="label label-default symfony">Symfony</span> -
+                                    <span class="label label-default bootstrap">Bootstrap</span> -
+                                    <span class="label label-default photoshop">Photoshop</span> -
+                                    <span class="label label-default illustrator">Illustrator</span> -
+                                    <a href="#competences"><span class="label label-default">And more ></span></a>
                                 </div>
                                 <!-- End#profilCompétences -->
                                 </div>
                                 <div id="menuLateral" class="col-lg-2 col-md-3">
                                 <ul class="list-unstyled">
-                                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Présentation</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Compétences</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Formation</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="">Expériences</a></li>
-					<li class="last"><span class="glyphicon glyphicon-chevron-right"></span><a href="">Intérets</a></li>
+                                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="#presentationProfil">Présentation</a></li>
+					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#formation">Formation</a></li>
+					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#experiences">Expériences</a></li>
+                                        <li><span class="glyphicon glyphicon-chevron-right"></span><a href="#competences">Compétences</a></li>
+					<li class="last"><span class="glyphicon glyphicon-chevron-right"></span><a href="#interets">Intérets</a></li>
 				</ul>
                                 </div>
                                 </div>
@@ -36,6 +36,7 @@
                                     <!-- Affichage graphique d'une timaline interactive -->
 					<ul class="list-unstyled list-inline">
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker year2008"></span>
                                                 <ul class="list-unstyled year2008">
                                                     <li id="timeline2008" class="listpoint">2008</li>
                                                     <li class="listborder">
@@ -44,6 +45,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker year2009"></span>
                                                 <ul class="list-unstyled year2009">
                                                     <li id="timeline2009" class="listpoint">2009-2011</li>
                                                     <li class="listborder">
@@ -53,6 +55,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker year2012"></span>
                                                 <ul class="list-unstyled year2012">
                                                     <li id="timeline2012" class="listpoint">2012</li>
                                                     <li class="listborder">
@@ -62,6 +65,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker year2013"></span>
                                                 <ul class="list-unstyled year2013">
                                                     <li id="timeline2013" class="listpoint">2013-2014</li>
                                                     <li class="listborder">
@@ -70,6 +74,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker year2015"></span>
                                                 <ul class="list-unstyled year2015">
                                                     <li id="timeline2015" class="listpoint">2015</li>
                                                     <li class="listborder">
@@ -79,6 +84,7 @@
                                                 </ul>
                                             </li>
                                             <li class="mainlist">
+                                                <span class="glyphicon glyphicon-map-marker all"></span>
                                                 <ul class="list-unstyled">
                                                     <li id="timelineAll" class="all listpoint">Toutes</li>
                                                     <li class="listborder">
@@ -97,7 +103,7 @@
 					<ul id="listePrincipale" class="list-unstyled">
                                             <li class="sectionListe form col-lg-6 formation">
 						<!-- Section Formation -->
-							<div>
+							<div id="formation">
 								<h3>Formation</h3>
 								<div class="year2015">
 									<h4 class ="click">2015</h4>
@@ -122,7 +128,7 @@
 						</li>
 						<li class="sectionListe exp col-lg-6">
 						<!-- Section Expériences -->
-							<div>
+							<div id="experiences">
 								<h3>Expériences</h3>
 								<div class="year2015">
 									<h4 class ="click">2015</h4>
@@ -161,7 +167,7 @@
 								</div>
 							</div>
 						</li>
-                                                <li class="sectionListe col-lg-12">
+                                                <li class="sectionListe col-lg-12 competences" id="competences">
 						<!-- Section Compétences -->
 						<!-- Affichage dynamique/graphique de mes compétences -->
 							<ul class="list-unstyled">
@@ -171,24 +177,270 @@
 									<h4>Développement Web / Langages</h4>
 									<ul class="list-unstyled row">
                                                                             <ul class="list-unstyled col-lg-4 col-md-6">
-										<li>HTML5/CSS3</li>
-										<li>Javascript/JQuery</li>
-										<li>PHP/MySQL</li>
-										<li>JSon</li>
-                                                                                <li>LESS</li>
-                                                                            </ul class="col-lg-4">
-                                                                            <ul class="list-unstyled col-lg-4 col-md-6">
-                                                                                <li>Bootstrap</li>
-										<li>Symfony</li>
-										<li>Wordpress</li>
-										<li>Joomla</li>
-										<li>Drupal</li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        HTML5/CSS3
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        JavaScript/JQuery
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        PHP/MySQL
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Json
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
+                                                                                <li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        LESS
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
                                                                             </ul>
                                                                             <ul class="list-unstyled col-lg-4 col-md-6">
-										<li>XML</li>
-										<li>JAVA</li>
-										<li>LUA</li>
-                                                                                <li>AS3</li>
+                                                                                <li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Bootstrap
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                <span class="competencesLi col-lg-4">
+                                                                                        Symfony
+                                                                                </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                    Wordpress
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Joomla
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Drupal
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <ul class="list-unstyled col-lg-4 col-md-6">
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        XML
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        JAVA
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Lua
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
+                                                                                <li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        AS3
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div></li>
                                                                             </ul>
 									</ul>
 								</li>
@@ -198,29 +450,182 @@
 									<h4>Logiciels</h4>
 									<ul class="list-unstyled row">
                                                                             <ul class="list-unstyled col-lg-4">
-                                                                                <li>Photoshop</li>
-										<li>Illustrator</li>
-										<li>After Effects</li>
+                                                                                <li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Photoshop
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Illustrator
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        After Effects
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
                                                                             </ul>
                                                                             <ul class="list-unstyled col-lg-4">
-										<li>Dreamweaver</li>
-										<li>Premiere</li>
-										<li>Softimage XSI</li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Dreamweaver
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Premiere
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Softimage XSI
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
                                                                             </ul>
                                                                             <ul class="list-unstyled col-lg-4">
-										<li>D'Fusion</li>
-										<li>Flash</li>
-										<li>Isadora</li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        D'Fusion
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Flash
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
+										<li>
+                                                                                    <span class="competencesLi col-lg-4">
+                                                                                        Isadora
+                                                                                    </span>
+                                                                                    <div class="col-lg-8">
+                                                                                    <ul class="listeCompetences progress">
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline full"><span class="full"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                        <li class="list-unstyled list-inline empty"><span class="empty"></span></li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                </li>
                                                                             </ul>
-									</ul>
-								</li>
-                                                                </div>
-                                                                <div class="col-lg-12">
-								<li>
-									<h4>Langues</h4>
-									<ul class="list-unstyled">
-										<li>Anglais (CLES B1)</li>
-										<li>Allemand</li>
 									</ul>
 								</li>
                                                                 </div>
@@ -239,23 +644,33 @@
 										<li>Sublim Text 3</li>
                                                                             </ul>
                                                                             <ul class="list-unstyled col-lg-4">
-										<li>Wamp</li>
+                                                                                <li>Netbeans IDE</li>
+                                                                                <li>Wamp</li>
 										<li>Méthode Agile (SCRUM)</li>
                                                                             </ul>
 									</ul>
 								</li>
                                                                 </div>
+                                                                <div class="col-lg-12">
+                                                                    <li>
+                                                                            <h4>Langues</h4>
+                                                                            <ul class="list-unstyled">
+                                                                                <li>Anglais (CLES B1)</li>
+										<li>Allemand</li>
+                                                                            </ul>
+                                                                    </li>
+                                                                </div>
 							</ul>
 						</li>
-						<li class="sectionListe col-lg-12">
+						<li class="sectionListe col-lg-12" id="interets">
 						<!-- Section Intérets -->
 							<h3>Interets</h3>
 							<ul class="list-unstyled">
-								<li>
+								<li class="col-lg-6 interets">
 									<h4>Écriture et Peinture</h4>
 									<p>Publication de nouvelles dans un Webzine consacré à la littérature fantastique et un rôle de chroniqueur et de veille pour des albums de musique underground. Lecture assidue et réalisation de toiles à l’acrylique.</p>
 								</li>
-								<li>
+								<li class="col-lg-6">
 									<h4>Sport</h4>
 									<p>La course à pieds et la pratique du football depuis une vingtaine d’années.</p>
 								</li>
