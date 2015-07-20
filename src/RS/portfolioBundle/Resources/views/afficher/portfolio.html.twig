@@ -1,5 +1,51 @@
 {% extends '::base.html.twig' %}
 
+{% block header %}
+    <div id="header" class="container">
+        <div id="headerContent" class="row">
+            <div id="headerTitle" class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+                <h1><a href="{{ path('accueil') }}" title="Accueil">
+                Richard Schilling - Développeur Web Junior  -  en Alternance
+                </a>
+                </h1>
+            </div>
+            <ul id="menu" class="col-lg-6 col-md-6 col-sm-5 col-xs-12 list-unstyled list-inline">
+                <li><a href="{{ path("profil") }}" class="activ">Profil</a></li>
+                <li><a href="{{ path("portfoliohome") }}" class="first">Portfolio</a></li>
+                <li><a href="{{ path("contact") }}" class="last">Contact</a></li>
+            </ul>
+            <div id="recherchAltern">
+            <!-- petite bannière au bas du header pour indiquer et mettre en avant ma recherche d'entreprise pour l'alternance -->
+            </div>
+            <!-- End#rechercheAltern -->
+        </div>
+        <!-- End#headerContent -->
+    </div>
+{% endblock %}
+
 {% block contenu %}
-    Mon Portfolio ici
+    <div class="folio-content col-lg-5 col-md-5 col-sm-12 firstwork">
+        <h3>Portfolio 2015 - Symfony/Bootstrap</h2>
+        <div class="works  col-lg-12 col-md-12">
+            <a href="{{ path('accueil') }}" class="zoombox">
+                <img src="{{ asset('bundles/rsportfolio/images/img-portfolio.png') }}" alt="preview" />
+            </a>
+        </div>
+    </div>
+    <div class="folio-content col-lg-7 col-md-7 col-sm-12 firstwork contentFolio">
+        <h4>Développement front & back end / Charte graphique</h3>
+        <div class="works-content  col-lg-12 col-md-12">
+            <p>
+                Réalisation de mon nouveau portfolio, orienté Développement Web à l'aide de frameworks et technologies tels que Symfony, Bootstrap et JQuery.
+                <br />
+                <strong>D'autres projets seront mis en ligne très prochainement.</strong>
+            <p>
+                URL : <a href="{{ path('accueil') }}" target="_blank"><b>Le site</b></a>
+            </p>
+            </p>
+            <p>
+            Symfony, Bootstrap, JQuery, HTML5/CSS3
+            </p>
+        </div>
+    </div>
 {% endblock %}

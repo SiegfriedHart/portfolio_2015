@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Portfolio 2015 - Richard SCHILLING - Developpeur Web Junio & Graphiste Multimédia">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta name="author" content="Richard SCHILLING - richard-schilling.fr">
     	<title>{% block title %}Richard Schilling Portfolio - Développeur Web Junior, graphiste Multimédia{% endblock %}</title>
         {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/rsportfolio/css/style.css') }}" type="text/css" media="all" />
@@ -23,13 +24,13 @@
         {% block header %}
         <div id="header" class="container">
             <div id="headerContent" class="row">
-                <div id="headerTitle" class="col-lg-6 col-md-6">
+                <div id="headerTitle" class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
                     <h1><a href="{{ path('accueil') }}" title="Accueil">
                     Richard Schilling - Développeur Web Junior  -  en Alternance
                     </a>
                     </h1>
                 </div>
-                <ul id="menu" class="col-lg-6 col-md-6 col-lg-6 list-unstyled list-inline">
+                <ul id="menu" class="col-lg-6 col-md-6 col-sm-5 col-xs-12 list-unstyled list-inline">
                     {{ render(controller("RSportfolioBundle:Afficher:menu")) }}
                 </ul>
                 <div id="recherchAltern">
@@ -51,24 +52,25 @@
 	<!-- End#wrapper -->
 	<div id="footer">
             <div id="footerContent" class="row">
-		<ul class="col-lg-3 list-unstyled">
+		<ul class="col-lg-3 col-md-3 col-sm-3 list-unstyled">
                     {{ render(controller("RSportfolioBundle:Afficher:menufooter")) }}
                 </ul>
-                <div class="col-lg-9">
-                <div id="profilFooter" class="col-lg-9">
-                    <h3>Qui suis-je ?</h3>
-                    <p>Développeur Web Junior & Graphiste Multimédia en <strong>alternance</strong>. Je suis actuellement à la recherche d'un poste.</p>
-			<p></p>
-                        <a href=""><span class="glyphicon glyphicon-file"></span>Voir mon CV</a>
-		</div>
-		<!-- End#profilFooter -->
-		<div id="contactFooter" class="col-lg-3">
-                    <h3>Me contacter</h3>
-			<p>Richard Schilling
-			<br />44 rue Saint Malo
-			<br />35000 Rennes
-			<br /><a href="mailto:schilling.richard.web@gmail.com">schilling.richard.web@gmail.com</a>
-		</div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div id="profilFooter" class="col-lg-9 col-md-8 col-sm-7">
+                        <h3>Qui suis-je ?</h3>
+                        <p>Développeur Web Junior & Graphiste Multimédia en <strong>alternance</strong>. Je suis actuellement à la recherche d'un poste.</p>
+                            <p></p>
+                            <a href="{{ asset('bundles/rsportfolio/files/cv_richard_schilling.pdf') }}"><span class="glyphicon glyphicon-file"></span>Voir mon CV</a>
+                    </div>
+                    <!-- End#profilFooter -->
+                    <div id="contactFooter" class="col-lg-3 col-md-4 col-sm-5">
+                        <h3>Me contacter</h3>
+                        <p>Richard Schilling
+                        <br />44 rue Saint Malo
+                        <br />35000 Rennes
+                        <br />
+                        <a href="mailto:schilling.richard.web@gmail.com">schilling.richard.web@gmail.com</a>
+                    </div>
                 </div>
 		<!-- End#contactFooter -->
             </div>
@@ -79,6 +81,7 @@
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="{{ asset('bundles/rsportfolio/css/bootstrap/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('bundles/rsportfolio/js/timelinescript.js') }}"></script>
+        <script src="{{ asset('bundles/rsportfolio/js/zoombox.js') }}"></script>
         {% endblock %}
     </body>
 </html>

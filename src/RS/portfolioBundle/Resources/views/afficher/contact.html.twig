@@ -1,5 +1,31 @@
 {% extends '::base.html.twig' %}
-
+{% block header %}
+    <div id="header" class="container">
+        <div id="headerContent" class="row">
+            <div id="headerTitle" class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+                <h1><a href="{{ path('accueil') }}" title="Accueil">
+                Richard Schilling - Développeur Web Junior  -  en Alternance
+                </a>
+                </h1>
+            </div>
+            <ul id="menu" class="col-lg-6 col-md-6 col-sm-5 col-xs-12 list-unstyled list-inline">
+                <li><a href="{{ path("profil") }}" class="activ">Profil</a></li>
+                <li><a href="{{ path("portfoliohome") }}" class="activ">Portfolio</a></li>
+                <li><a href="{{ path("contact") }}" class="first">Contact</a></li>
+            </ul>
+            <div id="recherchAltern">
+            <!-- petite bannière au bas du header pour indiquer et mettre en avant ma recherche d'entreprise pour l'alternance -->
+            </div>
+            <!-- End#rechercheAltern -->
+        </div>
+        <!-- End#headerContent -->
+    </div>
+{% endblock %}
 {% block contenu %}
-    Mes coordonées ici
+    <h3>Me contacter</h3>
+                        <p>Richard Schilling
+                        <br />44 rue Saint Malo
+                        <br />35000 Rennes
+                        <br />
+                        <a href="mailto:schilling.richard.web@gmail.com">schilling.richard.web@gmail.com</a>
 {% endblock %}
